@@ -28,13 +28,13 @@ const Navbar = () => {
                 <Link className="nav-link active" aria-current="page" to="/">INICIO</Link>
               </li>
               <li className="nav-item fs-6">
-                <Link className="nav-link " to="/">CONOCENOS</Link>
+                <Link className="nav-link " to="/conocenos">CONOCENOS</Link>
               </li>
               <li className="nav-item fs-6">
                 <Link className="nav-link" to="/charla" data-bs-toggle="modal" data-bs-target="#exampleModal1" aria-current="page">CHARLA</Link>
               </li>
               <li className="nav-item fs-6">
-                <Link className="nav-link" to="/">CRONOGRAMA</Link>
+                <Link className="nav-link" to="/cronograma">CRONOGRAMA</Link>
               </li>
               <li className="nav-item fs-6">
                 <Link className="nav-link" to="/contactanos">CONTACTANOS</Link>
@@ -78,18 +78,18 @@ const Navbar = () => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 className="modal-title" id="exampleModalLabel">Inicio Sesion</h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <form>
+              <form action='/charla'> 
                 <div className="mb-3">
-                  <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                  <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
                   <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
                   <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                  <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
                   <input type="password" className="form-control" id="exampleInputPassword1" required/>
                 </div>
                 <div className="mb-3 form-check">
