@@ -1,8 +1,8 @@
 
-import Imgnav from '../../../assets/img/imgnav.jpg'
-import Three from '../../../assets/img/icons/three-dots-vertical.svg'
-import Person from '../../../assets/img/icons/person-lines-fill.svg'
-import Pencil from '../../../assets/img/icons/pencil-square.svg'
+import Imgnav from '../../assets/img/imgnav.jpg'
+import Three from '../../assets/img/icons/three-dots-vertical.svg'
+import Person from '../../assets/img/icons/person-lines-fill.svg'
+import Pencil from '../../assets/img/icons/pencil-square.svg'
 
 
 
@@ -11,7 +11,7 @@ const Usuarios = () => {
         <>
 
             {/* <!-- Contenido --> */}
-            <div className="col-9">
+            
                 <div className="col px-3">
                     <div className="centrarcontenido">
                         <div className="position-relative d-inline-block w-100" >
@@ -163,7 +163,7 @@ const Usuarios = () => {
                         </table>
                     </div>
                 </div>
-            </div>
+            
 
             {/* <!-- Fin Contenido --> */}
         </>

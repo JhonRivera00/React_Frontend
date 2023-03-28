@@ -6,6 +6,8 @@ import Facebook from "../assets/img/icons/facebook.svg";
 import Instagram from "../assets/img/icons/instagram.svg";
 import Twitter from "../assets/img/icons/twitter.svg";
 import Whatsapp from "../assets/img/icons/whatsapp.svg";
+import { Link } from "react-router-dom";
+
 
 const Fotter = () => {
   return (
@@ -36,23 +38,25 @@ const Fotter = () => {
                 NAVEGACION
               </p>
               <hr className="text-white" />
+
               <div className="text-muted1 text-center">
-                <a className="nav-link" aria-current="page" href="/index.html">
+                <Link className="nav-link" aria-current="page" to="/">
                   INICIO
-                </a>
-                <a className="nav-link" href="dashboard/conocenos.html">
+                </Link>
+                <Link className="nav-link" to="/conocenos" >
                   CONOCENOS
-                </a>
-                <a className="nav-link" href="dashboard/charla.html">
+                </Link>
+                <Link className="nav-link" to="/charla">
                   CHARLA
-                </a>
-                <a className="nav-link" href="dashboard/cronograma.html">
+                </Link>
+                <Link className="nav-link" to="/cronograma" >
                   CRONOGRAMA
-                </a>
-                <a className="nav-link" href="dashboard/contactanos.html">
+                </Link>
+                <Link className="nav-link" to="/contactanos" >
                   CONTACTANOS
-                </a>
+                </Link>
               </div>
+            
             </div>
 
             <div className="col-lg-4 mt-0 mt-md-0 mt-5">

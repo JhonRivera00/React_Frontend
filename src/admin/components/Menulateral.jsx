@@ -12,7 +12,7 @@ function Menulateral() {
     <>
       <MenuSup />
       <div className="row">
-        <div className="col-4">
+        <div className="col-3  col-md-3 col-sm-3  col-lg-4">
 {/* Menu Lateral */}
 <div className="col-auto col-md-3 col-lg-4 col-xl-4 px-sm-2 px-0 bg-color-blue position-fixed">
   <div className="d-flex flex-column align-items-center align-items-sm-start px-0 px-sm-3 pt-2 text-white min-vh-100 bg-white bg-opacity-25 mx-3">
@@ -33,7 +33,7 @@ function Menulateral() {
         </Link>
       </li>
       <li className="nav-item w-100 rounded-4 shadow-lg">
-        <Link href="" className="nav-link pt-4 ps-2">
+        <Link to="/admin/cronograma" className="nav-link pt-4 ps-2">
           <img src={calendar3} alt="" className="bg-green-opacity p-2 rounded-2" />
           <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">CRONOGRAMA</span>
         </Link>
@@ -45,13 +45,13 @@ function Menulateral() {
         </Link>
       </li>
       <li className="nav-item w-100 rounded-4 shadow-lg">
-        <Link href="/dashboardm/solicitudesadm.html" className="nav-link pt-4 ps-2">
+        <Link to="/admin/solicitudes" className="nav-link pt-4 ps-2">
           <img src={cardList} alt="" className="bg-green-opacity p-2 rounded-2" />
           <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">SOLICITUDES</span>
         </Link>
       </li>
       <li className="nav-item w-100 rounded-4 shadow-lg">
-        <Link href="/dashboardm/Usuariosadm.html" className="nav-link pt-4 ps-2">
+        <Link to="/admin/usuarios" className="nav-link pt-4 ps-2">
           <img src={cardList} alt="" className="bg-green-opacity p-2 rounded-2" />
           <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">USUARIOS</span>
         </Link>
@@ -63,7 +63,7 @@ function Menulateral() {
 {/* Fin Menu Lateral */}
 
         </div>
-        <div className="col-8">
+        <div className="col-9 col-md-9  col-sm-9 col-lg-8">
           <Outlet />
         </div>
       </div>
