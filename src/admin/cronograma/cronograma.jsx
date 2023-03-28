@@ -11,7 +11,7 @@ const Cronograma = () => {
     <>
       {/* <!-- Contenido --> */}
 
-        <div className="col px-3">
+        <div className="col px-2">
           <div className="centrarcontenido">
             <div className="position-relative d-inline-block w-100">
               <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />

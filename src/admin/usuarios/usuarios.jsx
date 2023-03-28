@@ -12,8 +12,8 @@ const Usuarios = () => {
 
             {/* <!-- Contenido --> */}
             
-                <div className="col px-3">
-                    <div className="centrarcontenido">
+                <div className="col">
+             
                         <div className="position-relative d-inline-block w-100" >
                             <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
                             <h1 className="text-titulo position-absolute text-center  w-100">LISTA DE USUARIOS
@@ -26,8 +26,10 @@ const Usuarios = () => {
                         {/* <!-- Fin Titulo --> */}
 
                         {/* <!-- Inicio Contenido --> */}
+                        <div className='table w-100'>
 
-                        <table className="table caption-top">
+                        
+                        <table className="table-responsive caption-top w-100">
                             <thead>
                                 <tr style={{ backgroundColor: '#00324d', color: 'white' }} >
 
@@ -41,7 +43,7 @@ const Usuarios = () => {
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Jhoan</td>
+                                    <td>Jhoana</td>
                                     <td>Muñoz</td>
                                     <td>24526439</td>
                                     <td>
@@ -161,7 +163,8 @@ const Usuarios = () => {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                        </div>
+                    
                 </div>
             
 

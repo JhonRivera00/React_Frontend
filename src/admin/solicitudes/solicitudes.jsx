@@ -23,11 +23,8 @@ const Solicitudes = () => {
       {/* <!-- Fin Titulo --> */}
 
       {/* <!-- Inicio Contenido --> */}
-
-      <table className="table caption-top mt-5">
-        <div className="col-9">
-          <h1 />
-        </div>
+<div className="table-responsive w-100">
+      <table className="table caption-top mt-5 w-100">
         <thead>
           <tr className="bg-color-blue text-white">
             <th scope="col">
@@ -348,7 +345,7 @@ const Solicitudes = () => {
           </tr>
         </tbody>
       </table>
-
+      </div>
       {/* <!-- Fin Contenido --> */}
     </>
   );
