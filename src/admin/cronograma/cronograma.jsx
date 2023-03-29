@@ -11,8 +11,7 @@ const Cronograma = () => {
     <>
       {/* <!-- Contenido --> */}
 
-        <div className="col px-2">
-          <div className="centrarcontenido">
+        <div className="col">
             <div className="position-relative d-inline-block w-100">
               <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
               <h1 className="text-titulo position-absolute text-center  w-100">
@@ -33,10 +32,10 @@ const Cronograma = () => {
               </div>
               <div className="row card-group  d-flex flex-wrap justify-content-around">
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0 "
                   id="cardd"
                 >
-                  <img src={Futbol} className="card-img-top" alt="futbol" />
+                  <img src={Futbol} className="card-img-top w-100 " alt="futbol" />
                   <div className="card-body">
                     <h5 className="card-title text-center">Torneo De Futbol</h5>
                     <p className="card-text ">
@@ -62,7 +61,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckChecked"
+                        htmlFor="flexSwitchCheckChecked"
                       >
                         Evento Activo
                       </label>
@@ -77,7 +76,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Desactivar Evento
                       </label>
@@ -86,7 +85,7 @@ const Cronograma = () => {
                 </div>
 
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0"
                   id="cardd"
                 >
                   <img
@@ -122,7 +121,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDisabled"
+                        htmlFor="flexSwitchCheckDisabled"
                       >
                         Evento Inactivo
                       </label>
@@ -136,7 +135,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Activar Evento
                       </label>
@@ -145,7 +144,7 @@ const Cronograma = () => {
                 </div>
 
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0"
                   id="cardd"
                 >
                   <img src={Volei} className="card-img-top" alt="..." />
@@ -176,7 +175,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckChecked"
+                        htmlFor="flexSwitchCheckChecked"
                       >
                         Evento Activo
                       </label>
@@ -191,7 +190,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Desactivar Evento
                       </label>
@@ -200,7 +199,7 @@ const Cronograma = () => {
                 </div>
 
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0"
                   id="cardd"
                 >
                   <img src={Charla} className="card-img-top" alt="futbol" />
@@ -229,7 +228,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckChecked"
+                        htmlFor="flexSwitchCheckChecked"
                       >
                         Evento Activo
                       </label>
@@ -244,7 +243,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Desactivar Evento
                       </label>
@@ -253,7 +252,7 @@ const Cronograma = () => {
                 </div>
 
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0"
                   id="cardd"
                 >
                   <img
@@ -292,7 +291,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckChecked"
+                        htmlFor="flexSwitchCheckChecked"
                       >
                         Evento Activo
                       </label>
@@ -307,7 +306,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Desactivar Evento
                       </label>
@@ -316,7 +315,7 @@ const Cronograma = () => {
                 </div>
 
                 <div
-                  className="card mx-sm-5 my-sm-5 border rounded-0"
+                  className="card mx-sm-5 my-sm-5 border rounded-0 p-0"
                   id="cardd"
                 >
                   <img src={Psico} className="card-img-top" alt="..." />
@@ -350,7 +349,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckChecked"
+                        htmlFor="flexSwitchCheckChecked"
                       >
                         Evento Activo
                       </label>
@@ -365,7 +364,7 @@ const Cronograma = () => {
                       />
                       <label
                         className="form-check-label"
-                        for="flexSwitchCheckDefault"
+                        htmlFor="flexSwitchCheckDefault"
                       >
                         Desactivar Evento
                       </label>
@@ -374,7 +373,7 @@ const Cronograma = () => {
                 </div>
               </div>
             </div>
-          </div>
+         
         </div>
       
       {/* <!-- Fin Contenido --> */}

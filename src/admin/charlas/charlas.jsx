@@ -3,8 +3,8 @@ import Imgnav from "../../assets/img/imgnav.jpg";
 const Charlas = () => {
   return (
     <>
-    <div className="col px-3">
-    <div className="centrarcontenido">
+    
+    
       <div className="position-relative d-inline-block w-100">
         <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
         <h1 className="text-titulo position-absolute text-center w-100">
@@ -18,7 +18,7 @@ const Charlas = () => {
       {/* Fin Titulo */}
 
       {/* Inicio Contenido*/}
-      <main className="px-5 py-5">
+      <main className=" py-5">
         <div className="table-responsive">
           <table className="table table-hover table-sm border-green">
             <thead className="border-1">
@@ -44,7 +44,7 @@ const Charlas = () => {
                   Aceptar
                 </button>
 
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                <button type="button" className="ms-xl-3 mt-2 mt-xl-0 btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                   Aplazar
                 </button>
               </td>
@@ -195,8 +195,8 @@ const Charlas = () => {
           </table>
         </div>
       </main>
-    </div>
-  </div>
+    
+  
     </>
   );
 };

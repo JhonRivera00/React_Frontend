@@ -57,7 +57,7 @@ const Contactanos = () => {
                   type="text"
                   className="form-control border-green"
                   id="firstName"
-                  defaultValue=""
+                  value=""
                   placeholder="Nombre completo*"
                   required
                 />

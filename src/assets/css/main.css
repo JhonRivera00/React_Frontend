@@ -42,6 +42,10 @@ min-width: 300px;
     
     
 }
+.bg-color-opacity{
+    background-color: #00324d;
+    opacity: 10;
+}
 .text-green{
     color: #39a900 !important;
 }

@@ -18,12 +18,16 @@ function Menulateral() {
   <div className="d-flex flex-column align-items-center align-items-sm-start px-0 px-sm-3 pt-2 text-white min-vh-100 bg-white bg-opacity-25 mx-3">
     <div className="py-2 mt-2 mb-md-0 me-md-auto text-white text-decoration-none d-flex shadow-black rounded-3 w-100">
       <img src={person_circle} className="ms-3" alt="" />
+      
       <div className="d-flex flex-column ms-3 mt-1">
-        <div className="d-lg-flex d-none">
+        <div className="d-lg-flex d-none w-100 d-flex justify-content-around">
           <span className="text-white fw-light ms-1">Jennifer Villegas Pino</span>
-          <span className="badge rounded-pill bg-green w-50 mt-2">En línea</span>
+           
+<span className="badge rounded-pill bg-green w-25 float-right">En línea</span>
+
         </div>
       </div>
+      
     </div>
     <ul className="navbar-nav flex-column mb-sm-auto mt-4 align-items-center align-items-sm-start w-100" id="menu">
       <li className="nav-item w-100 rounded-4 shadow-lg">

@@ -63,48 +63,48 @@ function MenuSup() {
     </div>
   </nav>
   {/* Modal CREAR EVENTO */}
-<div class="modal fade" id="exampleModalIN" tabindex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalINLabel">CREAR EVENTO</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div className="modal fade" id="exampleModalIN" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalINLabel">CREAR EVENTO</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <form class="row g-2 needs-validation" action="/index.html" novalidate>
-          <div class="text-center w-100">
-            <h2 class="h2 pt-4 pb-5 f">CREAR EVENTO</h2>
+      <div className="modal-body">
+        <form className="row g-2 needs-validation" action="/index.html" noValidate>
+          <div className="text-center w-100">
+            <h2 className="h2 pt-4 pb-5 f">CREAR EVENTO</h2>
           </div>
           {/* Nombre del evento */}
-          <div class="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
-            <label for="validationCustom01" class="form-label">NOMBRE DEL EVENTO</label>
-            <input type="text" class="form-control" id="validationCustom01" required/>
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom01" className="form-label">NOMBRE DEL EVENTO</label>
+            <input type="text" className="form-control" id="validationCustom01" required/>
           </div>
           {/* Fecha y hora de inicio */}
-          <div class="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
-            <label for="validationCustom02" class="form-label">FECHA Y HORA DE INICIO</label>
-            <input type="datetime-local" class="form-control" id="validationCustom02" required/>
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom02" className="form-label">FECHA Y HORA DE INICIO</label>
+            <input type="datetime-local" className="form-control" id="validationCustom02" required/>
           </div>
           {/* Fecha y hora final */}
-          <div class="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
-            <label for="validationCustom03" class="form-label">FECHA Y HORA FINAL</label>
-            <input type="datetime-local" class="form-control" id="validationCustom03" required/>
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom03" className="form-label">FECHA Y HORA FINAL</label>
+            <input type="datetime-local" className="form-control" id="validationCustom03" required/>
           </div>
           {/* Seleccionar instructor */}
-          <div class="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
-            <label for="exampleFormControlSelect1" class="form-label">SELECCIONAR INSTRUCTOR</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option selected disabled>Seleccionar...</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="exampleFormControlSelect1" className="form-label">SELECCIONAR INSTRUCTOR</label>
+            <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
+              <option value="1" disabled>Seleccionar...</option>
+              <option value="2">1</option>
+              <option value="3">2</option>
+              <option value="4">3</option>
+              <option value="5">4</option>
+              <option value="6">5</option>
             </select>
           </div>
           {/* Botón CREAR EVENTO */}
-          <div class="col-12 d-flex justify-content-center mb-2 pb-4 pt-3">
-            <button class="btn btn-green" type="submit">CREAR EVENTO</button>
+          <div className="col-12 d-flex justify-content-center mb-2 pb-4 pt-3">
+            <button className="btn btn-green" type="submit">CREAR EVENTO</button>
           </div>
         </form>
       </div>

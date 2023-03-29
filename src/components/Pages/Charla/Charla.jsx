@@ -54,11 +54,11 @@ const Charla=()=> {
 <main className="text-center d-flex flex-column justify-content-center align-items-center" id="form-charla">
   <p className="fs-3 fw-semibold w-50 ">SOLICITA TU CHARLA DE FORMA GRUPAL O PERSONAL CON UNO DE NUESTROS PROFESIONALES</p>
   <div className="bg-green pt-1 w-25 "></div>
-  <form className="needs-validation w-50 " novalidate>
+  <form className="needs-validation w-50 " noValidate>
     <div className="row g-2 my-2">
         <div className="col-sm-12 mt-4 mt-md-5">
-            <input type="text" className="form-control border-green" id="firstName"
-               value="" placeholder="Nombre completo*" require/>
+            <input type="text" className="form-control border-green" id="firstName1"
+               defaultValue="" placeholder="Nombre completo*" require="true"/>
 
         </div>
 
@@ -77,11 +77,12 @@ const Charla=()=> {
         </div>
 
         <div className="col-md-12 mt-4 mt-md-5">
-            <select className="form-select col-md-12 border-green" id="validationCustom04" required>
-                <option selected disabled value=""> Selecciona una opcion...</option>
-                <option>Ana Maria Psicologa</option>
-                <option>Angie Lorena Enfermera</option>
-                <option>Jose Ortega Deportes</option>
+          
+            <select className="form-select col-md-12 border-green" defaultValue="1" id="validationCustom04" required>
+                <option disabled value="1"> Selecciona una opcion...</option>
+                <option value="2">Ana Maria Psicologa</option>
+                <option value="3">Angie Lorena Enfermera</option>
+                <option value="4">Jose Ortega Deportes</option>
             </select>
 
         </div>
