@@ -29,13 +29,42 @@ function MenuSup() {
           <li className="nav-item dropdown">
             <a className="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
               aria-expanded="false"><img src={bell2} alt="icon-user" /></a>
-            <ul className="dropdown-menu bg-color-blue" style={{left: "-120px"}} aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a className="dropdown-item text-white"  data-bs-toggle="modal" href="" data-bs-target="#exampleModal" ><img src={gear} alt="icon-ajustes"
-                    className="me-3"/>
-                  Ajustes</a>
-              </li>  
-            </ul>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownNotifications">
+    <h6 class="dropdown-header">Nuevas notificaciones</h6>
+    <a class="dropdown-item" href="#">
+      <div class="media">
+        <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
+        <div class="media-body">
+          <h6 class="mt-0 mb-1">Notificación 1</h6>
+          <p>Descripción de la notificación 1.</p>
+          <small class="text-muted">Hace 5 minutos</small>
+        </div>
+      </div>
+    </a>
+    <a class="dropdown-item" href="#">
+      <div class="media">
+        <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
+        <div class="media-body">
+          <h6 class="mt-0 mb-1">Notificación 2</h6>
+          <p>Descripción de la notificación 2.</p>
+          <small class="text-muted">Hace 10 minutos</small>
+        </div>
+      </div>
+    </a>
+    <a class="dropdown-item" href="#">
+      <div class="media">
+        <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
+        <div class="media-body">
+          <h6 class="mt-0 mb-1">Notificación 3</h6>
+          <p>Descripción de la notificación 3.</p>
+          <small class="text-muted">Hace 15 minutos</small>
+        </div>
+      </div>
+    </a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item text-center" href="#">Ver todas las notificaciones</a>
+  </div>
+
           </li>
         </div>
         <div className="navbar-nav ms-3 h-100">

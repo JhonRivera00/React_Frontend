@@ -27,7 +27,6 @@ const Charlas = () => {
                 <th>FICHA</th>
                 <th>MOTIVO</th>
                 <th>ESTADO</th>
-                <th>CORREO</th>
                 <th>BOTONES</th>
               </tr>
             </thead>
@@ -37,7 +36,6 @@ const Charlas = () => {
                 <td data-label="ficha">2452439</td>
                 <td data-label="motivo">Problema familiar</td>
                 <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
                 <td data-label="descripcion">
                   {/*  Button trigger modal  */}
                 <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
@@ -90,107 +88,7 @@ const Charlas = () => {
                 </div>
               </div>
 
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/*  Button trigger modal  */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-            </tr>
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/*  Button trigger modal  */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-              </tr>
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/* Button trigger modal*/}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-              </tr>
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/* Button trigger modal */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-              </tr>
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/*  Button trigger modal */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-              </tr>
-              <tr>
-                <td data-label="paciente">David</td>
-                <td data-label="ficha">2452439</td>
-                <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="correo">jrdavidrui426@gmail.com</td>
-                <td data-label="descripcion">
-                  {/* Button trigger modal */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
-              </tr>
+             
             </tbody>
           </table>
         </div>
