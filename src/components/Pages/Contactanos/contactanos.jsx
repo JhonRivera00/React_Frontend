@@ -1,11 +1,11 @@
-
 import React from "react";
 import Imgnav from "../../../assets/img/imgnav.jpg";
-import Phone from '../../../assets/img/icons/phone.svg'
-import House from '../../../assets/img/icons/house.svg'
-import Chat from '../../../assets/img/icons/chat-dots.svg'  
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.js'
+import Phone from "../../../assets/img/icons/phone.svg";
+import House from "../../../assets/img/icons/house.svg";
+import Chat from "../../../assets/img/icons/chat-dots.svg";
+import Check from '../../../assets/img/icons/check-circle.svg'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
 
 const Contactanos = () => {
   return (
@@ -50,6 +50,7 @@ const Contactanos = () => {
             Si tiene alguna pregunta, solo complete el formulario de contacto y{" "}
             <br /> le responderemos a la brevedad.
           </h6>
+
           <form className="needs-validation w-50 " noValidate>
             <div className="row g-2 my-2">
               <div className="col-sm-12 mt-4 mt-md-5">
@@ -97,7 +98,12 @@ const Contactanos = () => {
               </div>
 
               <div className="col-md-12 my-4 mt-md-5">
-                <button type="submit" className="btn btn-green btn-lg">
+                <button
+                  type="button"
+                  className="btn btn-green btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   Enviar mensaje
                 </button>
               </div>
@@ -107,6 +113,36 @@ const Contactanos = () => {
       </main>
 
       {/* <!--CONTACT END--> */}
+
+
+
+      {/* Modal de Ponte en contacto */}
+
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal">
+    
+            </div>
+            <div className="modal-body mx-auto h4">¡Tu cita se ha agendado exitosamente¡</div>
+            <img src={Check} className="mx-auto w-25" alt="" />
+            <div className="modal-body text-center">Pronto recibiras un mensaje confirmandote la programacion de tu cita</div>
+            <div className="modal-footer">
+              
+              <button type="button" className="btn btn-green mx-auto" data-bs-dismiss="modal">
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Fin modal de ponte en contacto */}
     </>
   );
 };

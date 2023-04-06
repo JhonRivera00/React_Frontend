@@ -51,13 +51,13 @@ function Menulateral() {
       <li className="nav-item w-100 rounded-4 shadow-lg">
         <Link to="/admin/solicitudes" className="nav-link pt-4 ps-2">
           <img src={cardList} alt="" className="bg-green-opacity p-2 rounded-2" />
-          <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">SOLICITUDES</span>
+          <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">USUARIOS</span>
         </Link>
       </li>
       <li className="nav-item w-100 rounded-4 shadow-lg">
         <Link to="/admin/usuarios" className="nav-link pt-4 ps-2">
           <img src={cardList} alt="" className="bg-green-opacity p-2 rounded-2" />
-          <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">USUARIOS</span>
+          <span className="d-none d-lg-inline text-white fs-5 ms-3 fw-light">PQRS</span>
         </Link>
       </li>
     </ul>

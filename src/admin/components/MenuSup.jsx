@@ -5,6 +5,7 @@ import gear from '../../assets/img/icons/gear.svg'
 import box_arrow from '../../assets/img/icons/box-arrow-right.svg'
 import bell2 from '../../assets/img/icons/bell2.svg'
 import person2 from '../../assets/img/icons/person-circle2.svg'
+import { Link, Outlet } from 'react-router-dom';
 
 function MenuSup() {
   return (
@@ -80,10 +81,10 @@ function MenuSup() {
               <li>
               </li>   
               <li>
-                <a className="dropdown-item text-white" href="/index.html">
+                <Link className="dropdown-item text-white" to="/">
                     <img src={box_arrow}
                     alt="icon-cerrarsesion" className="me-3" />
-                  Cerrar Sesion</a>
+                  Cerrar Sesion</Link>
               </li>
             </ul>
           </li>

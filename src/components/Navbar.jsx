@@ -48,11 +48,22 @@ const Navbar = () => {
                     <img src={bell2} alt="icon-cerrarsesion" className="" />
                     <span className="position-absolute top-0 start-100 translate-middle p-1 bg-green border  rounded-circle"></span>
                   </div></a>
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownNotifications">
+
+                  <div
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownNotifications"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAseptarRecha"   
+                >
                   <h6 class="dropdown-header ">Nuevas notificaciones</h6>
                   <a class="dropdown-item" href="#">
                     <div class="media">
-                      <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..." />
+                      <img
+                        src="https://via.placeholder.com/50x50"
+                        class="mr-3 rounded-circle"
+                        alt="..."
+                      />
+
                       <div class="media-body">
                         <h6 class="mt-0 mb-1">Notificación 1</h6>
                         <p>Descripción de la notificación 1.</p>
@@ -60,6 +71,8 @@ const Navbar = () => {
                       </div>
                     </div>
                   </a>
+
+
                   <a class="dropdown-item" href="#">
                     <div class="media">
                       <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..." />
@@ -70,6 +83,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </a>
+
                   <a class="dropdown-item" href="#">
                     <div class="media">
                       <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..." />
@@ -97,10 +111,10 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item text-white" href="/index2.html">
+                    <Link className="dropdown-item text-white" to="/admin">
                       <img src={box_arrow_right} alt="icon-cerrarsesion" className="me-3" />
                       Cerrar Sesion
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -258,6 +272,49 @@ const Navbar = () => {
         </div>
       </div>
       {/*Fin Modal Registrarse */}
+
+
+
+        {/* Modal notificaciones aceptar y rechazar  */}
+
+        <div
+        className="modal fade"
+        id="modalAseptarRecha"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog ">
+          <div className="modal-content bg-color-blue  text-white">
+            <div className="modal-header">
+              <h5 className="modal-title mx-auto" id="exampleModalLabel">
+                Solicitud Charla
+              </h5>
+              <img alt="icon-cerrarsesion" className="me-3" src={gear} />
+            </div>
+            <div className="modal-body text-center ">
+              Hola Fernando, Tu solicitud quedo asignada para el lunes 30 de
+              Abril del 2023 a las 16:00:00 horas del dia, Pedimos su
+              confirmacion de la solicitud
+            </div>
+            <div className="modal-footer mx-auto">
+              <button
+                type="button"
+                className="btn btn-green"
+                data-bs-dismiss="modal"
+              >
+                Aceptar
+              </button>
+              <button type="button" className="btn btn-danger">
+                Rechazar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Fin notificacion de aseptar y rechazar */}
+
 
       <Outlet />
       <Footer />

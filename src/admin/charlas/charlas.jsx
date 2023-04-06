@@ -1,10 +1,12 @@
 import Imgnav from "../../assets/img/imgnav.jpg";
+import users from "../../assets/img/users.png";
+import users1 from "../../assets/img/user1.png";
 
 const Charlas = () => {
   return (
     <>
-    
-    
+
+
       <div className="position-relative d-inline-block w-100">
         <img src={Imgnav} className="w-100 img-titulo-fondo" alt="" />
         <h1 className="text-titulo position-absolute text-center w-100">
@@ -37,64 +39,74 @@ const Charlas = () => {
                 <td data-label="motivo">Problema familiar</td>
                 <td data-label="estado">En espera</td>
                 <td data-label="descripcion">
-                  {/*  Button trigger modal  */}
-                <button type="button" className="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-                  Aceptar
-                </button>
-
-                <button type="button" className="ms-xl-3 mt-2 mt-xl-0 btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                  Aplazar
-                </button>
-              </td>
+                  <a className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ cursor: "pointer" }}> Ver mas...</a>
+                </td>
               </tr>
-              {/* Modal */}
-              <div className="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div className="modal-dialog modal-dialog modal-lg">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                      <h5 className="modal-title" id="staticBackdropLabel">
-                        SOLICITUD ACEPTADA
-                      </h5>
-                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div className="modal-footer">
-                      <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div className="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog modal-lg">
                   <div className="modal-content">
                     <div className="modal-header">
-                      <h5 className="modal-title" id="staticBackdropLabel">
-                        SOLICITUD APLAZADA
-                      </h5>
+                      <h4 className="modal-title" id="staticBackdropLabel">
+                        SOLICITUD
+                      </h4>
                       <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div className=" modal-body">
+                      <h5>Psicologia</h5>
+                      <div className="row mt-4 ">
+                        <div className="col-2">
+                          <img className="w-100 rounded-circle" src={users1} />
+                        </div>
+                        <div className="col-3">
+                          <div className=" d-flex">
+                            <p className=" fw-bold">Aprendiz: </p>
+                            <p className="ms-2">  Jhon Rivera</p>
+                          </div>
+                          <div className=" d-flex">
+                            <p className=" fw-bold">Ficha: </p>
+                            <p className="ms-2">2452439</p>
+                          </div>
+                          <div className=" d-flex">
+                            <p className=" fw-bold">Telefono: </p>
+                            <p className="ms-2">3174835424</p>
+                          </div>
+                          <div className=" d-flex">
+                            <p className=" fw-bold">Correo: </p>
+                            <p className="ms-2">riverajhon052@gmail.com</p>
+                          </div>
+                          <p></p>
+                        </div>
+                        <div className="col-6">
+                        <div className=" d-flex">
+                            <p className=" fw-bold">Motivo: </p>
+                            <p className="ms-2">Problema Familiar</p>
+                          </div>
+                        </div>
 
+
+                      </div>
+                    </div>
                     <div className="modal-footer">
-                      <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
+                      <button type="button" className="btn btn-success" data-bs-dismiss="modal">
+                        Aceptar
+                      </button>
+                      <button type="button" className="btn btn-primary" data-bs-dismiss="modal">
+                        Aplazar
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-             
+
             </tbody>
           </table>
         </div>
       </main>
-    
-  
+
+
     </>
   );
 };
