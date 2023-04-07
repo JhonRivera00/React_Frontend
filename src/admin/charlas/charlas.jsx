@@ -79,7 +79,7 @@ const Charlas = () => {
                           <p></p>
                         </div>
                         <div className="col-6">
-                        <div className=" d-flex">
+                          <div className=" d-flex">
                             <p className=" fw-bold">Motivo: </p>
                             <p className="ms-2">Problema Familiar</p>
                           </div>
@@ -92,7 +92,7 @@ const Charlas = () => {
                       <button type="button" className="btn btn-success" data-bs-dismiss="modal">
                         Aceptar
                       </button>
-                      <button type="button" className="btn btn-primary" data-bs-dismiss="modal">
+                      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAplazar" >
                         Aplazar
                       </button>
                     </div>
@@ -105,6 +105,53 @@ const Charlas = () => {
           </table>
         </div>
       </main>
+
+      {/* Modal CREAR EVENTO */}
+      <div className="modal fade" id="modalAplazar" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
+        <div className="modal-dialog ">
+          <div className="modal-content bg-color-blue text-white">
+            <div className="modal-header">
+              <h3 className="modal-title w-100 text-center " id="exampleModalINLabel">Aplazamiento</h3>
+            </div><br></br>
+                 
+            <div className="modal-body">
+              <form className="row g-2 needs-validation" action="/">
+               
+                {/* Fecha y hora de inicio */}
+                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}>
+                  <label htmlFor="validationCustom02" className="form-label">FECHA Y HORA APLAZAMIENTO</label>
+                  <input type="datetime-local" className="form-control" id="validationCustom02" required />
+                </div>
+               
+                {/* Seleccionar instructor */}
+                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
+                  <label htmlFor="exampleFormControlSelect1" className="form-label">SELECCIONAR PROFECIONAL</label>
+                  <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
+                    <option value="1" disabled>Seleccionar...</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="6">5</option>
+                  </select>
+                </div>
+
+                 {/* Motivo aplazamiento */}
+                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
+                  <label htmlFor="validationCustom01" className="form-label">MOTIVO APLAZAMIENTO</label>
+                  <textarea type="text" className="form-control" id="validationCustom01" required />
+                </div>
+
+                {/* Botón CREAR EVENTO */}
+                <div className="col-12 d-flex justify-content-center mb-2 pb-6 pt-2">
+                  <button className="btn btn-green w-25" type="submit">Aplazar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* FinModal MODAL CREAR EVENTO */}
 
 
     </>
