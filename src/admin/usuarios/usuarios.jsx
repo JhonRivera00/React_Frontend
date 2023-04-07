@@ -26,10 +26,10 @@ const Usuarios = () => {
                 {/* <!-- Fin Titulo --> */}
 
                 {/* <!-- Inicio Contenido --> */}
-                <div className='table w-100 mt-2'>
+                <div className='table-responsive w-100 mt-2'>
 
 
-                    <table className="table-responsive caption-top w-100">
+                    <table className="table caption-top w-100">
                         <thead>
                             <tr className='text-white' style={{ backgroundColor: '#00324d' }} >
 
@@ -37,7 +37,7 @@ const Usuarios = () => {
                                 <th className='col-3'>Nombres</th>
                                 <th className='col-2'>Ficha</th>
                                 <th className=' col-5' >Pqrs</th>
-                                <th className='col-1'><img src={Pencil} alt="" className=" bg-green-opacity p-2 rounded-2" /></th>
+                                <th className='col-1 '><img src={Pencil} alt="" className=" bg-green-opacity p-2 rounded-2" /></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,7 +55,7 @@ const Usuarios = () => {
                                 </div>
                                 <td>
 
-                                    <button className='bg-success text-white rounded-pill text-center'>Responder</button>
+                                    <button type='submit' className='bg-success btn p-1 border-0 link-light text-center' data-bs-toggle="modal" href="" data-bs-target="#modalpqrs">Responder</button>
                                 </td>
                             </tr>
 
@@ -64,9 +64,34 @@ const Usuarios = () => {
                 </div>
 
             </div>
-
-
             {/* <!-- Fin Contenido --> */}
+
+              {/* Modal CREAR EVENTO */}
+<div className="modal fade" id="modalpqrs" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content bg-color-blue text-white">
+      <div className="modal-header">
+        <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">PQRS</h3>
+        <button type="button" className="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        <form className="row g-2 needs-validation " action="" >
+          {/* Respuesta PQRS*/}
+          <div className="col-12 mt-0" style={{padding: "0 50px"}}>
+            <label htmlFor="validationCustom01" className="form-label">ESCRIBE TU RESPUESTA</label>
+<textarea className='form-control' required></textarea>
+          </div>
+     
+          {/* Botón CREAR EVENTO */}
+          <div className="col-12 d-flex justify-content-center mb-2 pb-4 pt-3">
+            <button className="btn btn-green" type="submit">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{/* FinModal MODAL CREAR EVENTO */}
         </>
     )
 }

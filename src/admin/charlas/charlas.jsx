@@ -37,8 +37,12 @@ const Charlas = () => {
                 <td data-label="paciente">Jhon Alexander Rivera</td>
                 <td data-label="ficha">2452439</td>
                 <td data-label="motivo">Problema familiar</td>
-                <td data-label="estado">En espera</td>
-                <td data-label="descripcion">
+                <td className=" link-light ">
+              <div >
+              <p className="bg-warning rounded-pill text-center w-75">En espera</p>
+              </div>
+              </td>               
+               <td data-label="descripcion">
                   <a className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ cursor: "pointer" }}> Ver mas...</a>
                 </td>
               </tr>
@@ -59,7 +63,7 @@ const Charlas = () => {
                         <div className="col-2">
                           <img className="w-100 rounded-circle" src={users1} />
                         </div>
-                        <div className="col-3">
+                        <div className="col-4">
                           <div className=" d-flex">
                             <p className=" fw-bold">Aprendiz: </p>
                             <p className="ms-2">  Jhon Rivera</p>
