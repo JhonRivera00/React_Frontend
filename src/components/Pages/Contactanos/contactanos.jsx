@@ -51,7 +51,7 @@ const Contactanos = () => {
             <br /> le responderemos a la brevedad.
           </h6>
 
-          <form className="needs-validation w-50 " noValidate>
+          <form className="needs-validation w-50" >
             <div className="row g-2 my-2">
               <div className="col-sm-12 mt-4 mt-md-5">
                 <input
@@ -97,12 +97,13 @@ const Contactanos = () => {
                 ></textarea>
               </div>
 
+
               <div className="col-md-12 my-4 mt-md-5">
                 <button
-                  type="button"
+                  type="submit"
                   className="btn btn-green btn-lg"
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#modalContactamos"
                 >
                   Enviar mensaje
                 </button>
@@ -115,12 +116,11 @@ const Contactanos = () => {
       {/* <!--CONTACT END--> */}
 
 
-
       {/* Modal de Ponte en contacto */}
 
       <div
         className="modal fade"
-        id="exampleModal"
+        id="modalContactamos"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"

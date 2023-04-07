@@ -38,9 +38,7 @@ const Solicitudes = () => {
             <th scope="col">Identificacion</th>
             <th scope="col">Ficha</th>
             <th scope="col">Estado</th>
-            <th scope="col">
-             Roll
-            </th>
+            <th Roll scope="col text-center">Roll</th>
           </tr>
         </thead>
         <tbody>
@@ -55,35 +53,10 @@ const Solicitudes = () => {
               </div>
               </td>
             <td>
-              <div className="dropdown">
-                <a
-                  href=""
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    src={Theree}
-                    className="bg-green rounded p-2 bg-opacity-25 border"
-                    alt=""
-                  />
-                </a>
-                <ul
-                  className="dropdown-menu border-green"
-                  aria-labelledby="dropdownMenuButton1"
-                >
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Inhabilitar
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Habilitar
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="form-check form-switch">
+  <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked" />
+<p className="text-muted">Aprendiz</p>
+</div>
             </td>
           </tr>
         </tbody>
