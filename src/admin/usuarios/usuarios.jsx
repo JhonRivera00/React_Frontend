@@ -50,12 +50,12 @@ const Usuarios = () => {
                                 </td>
 
                                 <button className="btn btn-link" type='button' data-bs-toggle="collapse" data-bs-target="#texto-completo">Leer completo</button>
-                                    <div id="texto-completo" className="collapse">
-                                        Este es un texto largo que se mostrará completo al hacer clic en el botón. ¡Genial!
-                                    </div>
+                                <div id="texto-completo" className="collapse">
+                                    Este es un texto largo que se mostrará completo al hacer clic en el botón. ¡Genial!
+                                </div>
                                 <td>
 
-<button className='btn btn-success'>Responder</button>
+                                    <button className='bg-success text-white rounded-pill text-center'>Responder</button>
                                 </td>
                             </tr>
 
