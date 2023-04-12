@@ -25,35 +25,35 @@ function MenuSup() {
 <a   className="btn btn-green" data-bs-toggle="modal" href="" data-bs-target="#exampleModalIN" >
   + Crear evento</a>
 
-      <div className="d-inline d-flex navbar-brand" id="navbarSupportedContent">
-        <div className="navbar-nav ms-3">
-          <li className="nav-item dropdown">
+      <div className="d-inline d-flex navbar-brand " id="navbarSupportedContent">
+        <div className="navbar-nav ms-3 ">
+          <li className="nav-item dropdown ">
             <a className="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
               aria-expanded="false"><img src={bell2} alt="icon-user" /></a>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownNotifications">
-    <h6 class="dropdown-header">Nuevas notificaciones</h6>
+          <div class="dropdown-menu dropdown-menu-end bg-color-blue " aria-labelledby="dropdownNotifications">
+    <h6 class="dropdown-header text-white">Nuevas notificaciones</h6>
     <a class="dropdown-item" href="#">
-      <div class="media">
+      <div class="media text-white">
         <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
         <div class="media-body">
-          <h6 class="mt-0 mb-1">Notificación 1</h6>
+          <h6 class="mt-0 mb-1 ">Notificación 1</h6>
           <p>Descripción de la notificación 1.</p>
           <small class="text-muted">Hace 5 minutos</small>
         </div>
       </div>
     </a>
     <a class="dropdown-item" href="#">
-      <div class="media">
+      <div class="media text-white">
         <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
         <div class="media-body">
-          <h6 class="mt-0 mb-1">Notificación 2</h6>
+          <h6 class="mt-0 mb-1 ">Notificación 2</h6>
           <p>Descripción de la notificación 2.</p>
           <small class="text-muted">Hace 10 minutos</small>
         </div>
       </div>
     </a>
     <a class="dropdown-item" href="#">
-      <div class="media">
+      <div class="media text-white">
         <img src="https://via.placeholder.com/50x50" class="mr-3 rounded-circle" alt="..."/>
         <div class="media-body">
           <h6 class="mt-0 mb-1">Notificación 3</h6>
@@ -63,7 +63,7 @@ function MenuSup() {
       </div>
     </a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item text-center" href="#">Ver todas las notificaciones</a>
+    <a class="dropdown-item text-center text-white" href="#">Ver todas las notificaciones</a>
   </div>
 
           </li>
