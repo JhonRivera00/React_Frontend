@@ -1,6 +1,4 @@
-
 import Imgnav from '../../assets/img/imgnav.jpg'
-import Three from '../../assets/img/icons/three-dots-vertical.svg'
 import Person from '../../assets/img/icons/person-lines-fill.svg'
 import Pencil from '../../assets/img/icons/pencil-square.svg'
 import search from '../../assets/img/icons/search.svg'
