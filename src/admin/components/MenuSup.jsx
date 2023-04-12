@@ -66,102 +66,82 @@ function MenuSup() {
                   <a class="dropdown-item text-center" href="#">Ver todas las notificaciones</a>
                 </div>
 
-              </li>
-            </div>
-            <div className="navbar-nav ms-3 h-100">
-              <li className="nav-item dropdown">
-                <a className="nav-link h-100" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false"><img src={person2} alt="icon-user" /></a>
-                <ul className="dropdown-menu bg-color-blue" style={{ left: "-120px" }} aria-labelledby="navbarDropdownMenuLink">
-                  <li>
-                    <a className="dropdown-item text-white" data-bs-toggle="modal" href="" data-bs-target="#modalInicioDatos" ><img src={gear} alt="icon-ajustes"
-                      className="me-3" />
-                      Ajustes</a>
-                  </li>
-                  <li>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item text-white" to="/">
-                      <img src={box_arrow}
-                        alt="icon-cerrarsesion" className="me-3" />
-                      Cerrar Sesion</Link>
-                  </li>
-                </ul>
-              </li>
-            </div>
-          </div>
+          </li>
         </div>
-      </nav>
-
-      {/* Modal CREAR EVENTO */}
-      <div className="modal fade" id="exampleModalIN" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
-        <div className="modal-dialog ">
-          <div className="modal-content bg-color-blue text-white">
-
-            <div className="modal-header">
-              <h3 className="modal-title w-100 text-center" id="exampleModalINLabel">CREAR EVENTO</h3>
-              <button type="button" className="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div className="modal-body"><br></br>
-              <form className="row g-2 needs-validation" action="/index.html">
-
-                {/* Nombre del evento */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}>
-                  <label htmlFor="validationCustom01" className="form-label">NOMBRE DEL EVENTO</label>
-                  <input type="text" className="form-control" placeholder='Ingresar Evento' id="validationCustom01" required />
-                </div>
-                {/* Tipo de evento */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="exampleFormControlSelect1" className="form-label">TIPO DE EVENTO</label>
-                  <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
-                    <option value="1" disabled>Seleccionar...</option>
-                    <option value="2">DESTACADO</option>
-                    <option value="3">NOTICIA</option>
-                    <option value="4">CRONOGRAMA</option>
-                  </select>
-                </div>
-                {/* Fecha y hora de inicio */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="validationCustom02" className="form-label">FECHA Y HORA DE INICIO</label>
-                  <input type="datetime-local" className="form-control" id="validationCustom02" required />
-                </div>
-                {/* Fecha y hora final */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="validationCustom03" className="form-label">FECHA Y HORA FINAL</label>
-                  <input type="datetime-local" className="form-control" id="validationCustom03" required />
-                </div>
-                {/* Seleccionar instructor */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="exampleFormControlSelect1" className="form-label">SELECCIONAR INSTRUCTOR</label>
-                  <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
-                    <option value="1" disabled>Seleccionar...</option>
-                    <option value="2">1</option>
-                    <option value="3">2</option>
-                    <option value="4">3</option>
-                    <option value="5">4</option>
-                    <option value="6">5</option>
-                  </select>
-                </div>
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="validationCustom01" className="form-label">ADJUNTAR DOCUMENTO</label>
-                  <input type="file" rows="3" className="form-control" placeholder='Ingresar descripcion' id="validationCustom01" required />
-                </div>
-                {/* Descripcion */}
-                <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
-                  <label htmlFor="validationCustom01" className="form-label">DESCRIPCION</label>
-                  <textarea type="text" rows="3" className="form-control" placeholder='Ingresar descripcion' id="validationCustom01" required />
-                </div>
-                {/* Botón CREAR EVENTO */}
-                <div className="col-12 d-flex justify-content-center mb-2 pb-6 pt-4">
-                  <button className="btn btn-green" type="submit">CREAR EVENTO</button>
-                </div>
-              </form>
-            </div>
-          </div>
+        <div className="navbar-nav ms-3 h-100">
+          <li className="nav-item dropdown">
+            <a className="nav-link h-100" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src={person2}alt="icon-user" /></a>
+            <ul className="dropdown-menu bg-color-blue" style={{left: "-120px"}}  aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a className="dropdown-item text-white"  data-bs-toggle="modal" href="" data-bs-target="#modalInicioDatos" ><img src={gear} alt="icon-ajustes"
+                    className="me-3"/>
+                  Ajustes</a>
+              </li>
+              <li>
+              </li>   
+              <li>
+                <Link className="dropdown-item text-white" to="/">
+                    <img src={box_arrow}
+                    alt="icon-cerrarsesion" className="me-3" />
+                  Cerrar Sesion</Link>
+              </li>
+            </ul>
+          </li>
         </div>
       </div>
-      {/* FinModal MODAL CREAR EVENTO */}
+    </div>
+  </nav>
+  {/* Modal CREAR EVENTO */}
+<div className="modal fade" id="exampleModalIN" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalINLabel">CREAR EVENTO</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        <form className="row g-2 needs-validation" action="/index.html" noValidate>
+          <div className="text-center w-100">
+            <h2 className="h2 pt-4 pb-5 f">CREAR EVENTO</h2>
+          </div>
+          {/* Nombre del evento */}
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom01" className="form-label">NOMBRE DEL EVENTO</label>
+            <input type="text" className="form-control" id="validationCustom01" required/>
+          </div>
+          {/* Fecha y hora de inicio */}
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom02" className="form-label">FECHA Y HORA DE INICIO</label>
+            <input type="datetime-local" className="form-control" id="validationCustom02" required/>
+          </div>
+          {/* Fecha y hora final */}
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="validationCustom03" className="form-label">FECHA Y HORA FINAL</label>
+            <input type="datetime-local" className="form-control" id="validationCustom03" required/>
+          </div>
+          {/* Seleccionar instructor */}
+          <div className="col-12 mt-0" style={{padding: "0 50px 0 50px"}}>
+            <label htmlFor="exampleFormControlSelect1" className="form-label">SELECCIONAR INSTRUCTOR</label>
+            <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
+              <option value="1" disabled>Seleccionar...</option>
+              <option value="2">1</option>
+              <option value="3">2</option>
+              <option value="4">3</option>
+              <option value="5">4</option>
+              <option value="6">5</option>
+            </select>
+          </div>
+          {/* Botón CREAR EVENTO */}
+          <div className="col-12 d-flex justify-content-center mb-2 pb-4 pt-3">
+            <button className="btn btn-green" type="submit">CREAR EVENTO</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{/* FinModal MODAL CREAR EVENTO */}
 
 
       {/* <!-- Modal datos ajustes --> */}
