@@ -308,7 +308,6 @@ const Navbar = () => {
         </div>
       </div> */}
 
-
       {/* <!-- Modal datos ajustes --> */}
       <div
         className="modal fade"
@@ -319,13 +318,11 @@ const Navbar = () => {
       >
         <div className="modal-dialog ">
           <div className="modal-content bg-color-blue  text-white ">
-            <form
-              className="needs-validation"
-              action=""
-              autoComplete="off"
-            >
+            <form className="needs-validation" action="" autoComplete="off">
               <div className="modal-header">
-                <h4 className="modal-title w-100 text-center ">Datos Generales</h4>
+                <h4 className="modal-title w-100 text-center ">
+                  Datos Generales
+                </h4>
                 <button
                   type="button"
                   className="btn-close"
@@ -338,7 +335,7 @@ const Navbar = () => {
                   <div class="col-md-7 col-lg-8 mx-auto">
                     <div class="row g-3">
                       <div class="col-sm-6">
-                        <label for="firstName"  class="form-label ">
+                        <label for="firstName" class="form-label ">
                           Nombre
                         </label>
                         <input
@@ -365,10 +362,12 @@ const Navbar = () => {
 
                       <div class="col-12">
                         <label for="username" class="form-label">
-                         correo electronico
+                          correo electronico
                         </label>
                         <div className="input-group has-validation">
-                          <span className="input-group-text border-green">@</span>
+                          <span className="input-group-text border-green">
+                            @
+                          </span>
                           <input
                             type="text"
                             className="form-control  bg-white border-green"
@@ -439,10 +438,18 @@ const Navbar = () => {
         <div className="modal-dialog ">
           <div className="modal-content bg-color-blue  text-white">
             <div className="modal-header">
-              <h5 className="modal-title text-center w-100" id="exampleModalLabel">
+              <h5
+                className="modal-title text-center w-100"
+                id="exampleModalLabel"
+              >
                 Solicitud Charla
               </h5>
-              <button type="button" className="btn-close bg-white " data-bs-dismiss="modal" aria-label="Close" ></button>
+              <button
+                type="button"
+                className="btn-close bg-white "
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
 
             <div className="modal-body text-center ">
@@ -467,85 +474,168 @@ const Navbar = () => {
       </div>
       {/* Fin notificacion de aseptar y rechazar */}
 
-
       {/* <!-- Modal Registrarse --> */}
-      <div className="modal fade"
+      <div
+        className="modal fade"
         id="modalRegistrarse"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-
         <div className="contenedores-modal position-relative  ">
           {/* <!-- Modal Registrarse --> */}
           <div id="modal-usuario-registro ">
             <div className="modal-dialog ">
-              
               <div className="modal-content  bg-color-blue  text-white ">
-                <form className="needs-validation contenedor-registro rounded-3" action="/" >
+                <form
+                  className="needs-validation contenedor-registro rounded-3"
+                  action="/"
+                >
                   <div className="row g-3  text-white  p-4 rounded-3 ">
                     <div className="w-100 d-flex justify-content-end ">
-                      <button type="button" className="btn-close bg-light" style={{width: "20px", height: "20px"}} data-bs-dismiss="modal" aria-label="Close"></button>
-
+                      <button
+                        type="button"
+                        className="btn-close bg-light"
+                        style={{ width: "20px", height: "20px" }}
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <h3 className="text-center pb-3">Regístrate</h3>
 
                     <div className="col-sm-6">
-                      <label htmlFor="firstName" className="form-label">Nombres</label>
-                      <input type="text" className="form-control" id="firstName" placeholder="" required />
+                      <label htmlFor="firstName" className="form-label">
+                        Nombres
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="firstName"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-sm-6">
-                      <label htmlFor="lastName" className="form-label">Apellidos</label>
-                      <input type="text" className="form-control" id="lastName" placeholder="" required />
+                      <label htmlFor="lastName" className="form-label">
+                        Apellidos
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="lastName"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="username" className="form-label">Nombre de Usuario</label>
+                      <label htmlFor="username" className="form-label">
+                        Nombre de Usuario
+                      </label>
                       <div className="input-group has-validation">
                         <span className="input-group-text">@</span>
-                        <input type="text" className="form-control" id="username" placeholder="" required />
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="username"
+                          placeholder=""
+                          required
+                        />
                       </div>
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="email" className="form-label">Correo</label>
-                      <input type="email" className="form-control" id="email" placeholder="" required />
+                      <label htmlFor="email" className="form-label">
+                        Correo
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="address" className="form-label">Contraseña</label>
-                      <input type="password" className="form-control" id="address" placeholder="" required />
+                      <label htmlFor="address" className="form-label">
+                        Contraseña
+                      </label>
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="address"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="address2" className="form-label">Confirmar Contraseña</label>
-                      <input type="password" className="form-control" id="address2" placeholder="" required />
+                      <label htmlFor="address2" className="form-label">
+                        Confirmar Contraseña
+                      </label>
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="address2"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="telefono" className="form-label">Telefono</label>
-                      <input type="Number" className="form-control" id="telefono" placeholder="" required />
+                      <label htmlFor="telefono" className="form-label">
+                        Telefono
+                      </label>
+                      <input
+                        type="Number"
+                        className="form-control"
+                        id="telefono"
+                        placeholder=""
+                        required
+                      />
                     </div>
 
                     <div className="col-12">
-                      <label htmlFor="validationGenero" className="form-label">Genero</label>
-                      <select className="form-select" id="validationGenero" aria-label="Default select example" required>
-                        <option disable="true" >Genero</option>
+                      <label htmlFor="validationGenero" className="form-label">
+                        Genero
+                      </label>
+                      <select
+                        className="form-select"
+                        id="validationGenero"
+                        aria-label="Default select example"
+                        required
+                      >
+                        <option disable="true">Genero</option>
                         <option defaultValue="1">Masculino</option>
                         <option defaultValue="2">Femenino</option>
                       </select>
                     </div>
 
                     <div className="ms-2">
-                      <input type="checkbox" className="form-check-input" id="same-address" />
-                      <label className="form-check-label" htmlFor="same-address">Recordar</label>
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        id="same-address"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="same-address"
+                      >
+                        Recordar
+                      </label>
                     </div>
 
                     <div className="w-100 d-flex justify-content-center">
-                    <button className="w-50 btn btn-green" type="submit" id="botton-registrar">Registrar</button>
+                      <button
+                        className="w-50 btn btn-green"
+                        type="submit"
+                        id="botton-registrar"
+                      >
+                        Registrar
+                      </button>
                     </div>
-
                   </div>
                 </form>
               </div>
