@@ -16,7 +16,7 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <Link className="navbar-brand" to="/">
             <img src={Horizontal} alt="Logo" className="img-logo" />
             <img
@@ -91,59 +91,59 @@ const Navbar = () => {
                 </a>
 
                 <div
-                  class="dropdown-menu dropdown-menu-end"
+                  className="dropdown-menu dropdown-menu-end bg-color-blue "
                   aria-labelledby="dropdownNotifications"
                   data-bs-toggle="modal"
                   data-bs-target="#modalAseptarRecha"
                 >
-                  <h6 class="dropdown-header ">Nuevas notificaciones</h6>
-                  <a class="dropdown-item" href="#">
-                    <div class="media">
+                  <h6 className="dropdown-header text-white">Nuevas notificaciones</h6>
+                  <a className="dropdown-item" href="#">
+                    <div className="media">
                       <img
                         src="https://via.placeholder.com/50x50"
-                        class="mr-3 rounded-circle"
+                        className="mr-3 rounded-circle"
                         alt="..."
                       />
 
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1">Notificación 1</h6>
-                        <p>Descripción de la notificación 1.</p>
-                        <small class="text-muted">Hace 5 minutos</small>
+                      <div className="media-body">
+                        <h6 className="mt-0 mb-1 text-white">Notificación 1</h6>
+                        <p className="text-white">Descripción de la notificación 1.</p>
+                        <small className="text-muted">Hace 5 minutos</small>
                       </div>
                     </div>
                   </a>
 
-                  <a class="dropdown-item" href="#">
-                    <div class="media">
+                  <a className="dropdown-item text-white" href="#">
+                    <div className="media">
                       <img
                         src="https://via.placeholder.com/50x50"
-                        class="mr-3 rounded-circle"
+                        className="mr-3 rounded-circle"
                         alt="..."
                       />
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1">Notificación 2</h6>
+                      <div className="media-body">
+                        <h6 className="mt-0 mb-1">Notificación 2</h6>
                         <p>Descripción de la notificación 2.</p>
-                        <small class="text-muted">Hace 10 minutos</small>
+                        <small className="text-muted">Hace 10 minutos</small>
                       </div>
                     </div>
                   </a>
 
-                  <a class="dropdown-item" href="#">
-                    <div class="media">
+                  <a className="dropdown-item text-white" href="#">
+                    <div className="media">
                       <img
                         src="https://via.placeholder.com/50x50"
-                        class="mr-3 rounded-circle"
+                        className="mr-3 rounded-circle"
                         alt="..."
                       />
-                      <div class="media-body">
-                        <h6 class="mt-0 mb-1">Notificación 3</h6>
+                      <div className="media-body">
+                        <h6 className="mt-0 mb-1">Notificación 3</h6>
                         <p>Descripción de la notificación 3.</p>
-                        <small class="text-muted">Hace 15 minutos</small>
+                        <small className="text-muted">Hace 15 minutos</small>
                       </div>
                     </div>
                   </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-center" href="#">
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item text-center text-white" href="#">
                     Ver todas las notificaciones
                   </a>
                 </div>
@@ -311,67 +311,67 @@ const Navbar = () => {
 
       {/* <!-- Modal datos ajustes --> */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="modalInicioDatos"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog ">
-          <div class="modal-content bg-color-blue  text-white ">
+        <div className="modal-dialog ">
+          <div className="modal-content bg-color-blue  text-white ">
             <form
-              class="needs-validation"
+              className="needs-validation"
               action=""
               autocomplete="off"
             >
-              <div class="modal-header">
-                <h4 class="modal-title w-100 text-center ">Datos Generales</h4>
+              <div className="modal-header">
+                <h4 className="modal-title w-100 text-center ">Datos Generales</h4>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body text-white">
-                <div class="container">
-                  <div class="col-md-7 col-lg-8 mx-auto">
-                    <div class="row g-3">
-                      <div class="col-sm-6">
-                        <label for="firstName"  class="form-label ">
+              <div className="modal-body text-white">
+                <div className="container">
+                  <div className="col-md-7 col-lg-8 mx-auto">
+                    <div className="row g-3">
+                      <div className="col-sm-6">
+                        <label for="firstName"  className="form-label ">
                           Nombre
                         </label>
                         <input
                           type="text"
-                          class="form-control bg-white border-green"
+                          className="form-control bg-white border-green"
                           id="firstName"
                           placeholder="Ingrese Nombre"
                           required
                         />
                       </div>
 
-                      <div class="col-sm-6">
-                        <label for="lastName" class="form-label">
+                      <div className="col-sm-6">
+                        <label for="lastName" className="form-label">
                           Apellido
                         </label>
                         <input
                           type="text"
-                          class="form-control  bg-white border-green"
+                          className="form-control  bg-white border-green"
                           id="lastName"
                           placeholder="Ingrese Apellido"
                           required
                         />
                       </div>
 
-                      <div class="col-12">
-                        <label for="username" class="form-label">
+                      <div className="col-12">
+                        <label for="username" className="form-label">
                          correo electronico
                         </label>
-                        <div class="input-group has-validation">
-                          <span class="input-group-text border-green">@</span>
+                        <div className="input-group has-validation">
+                          <span className="input-group-text border-green">@</span>
                           <input
                             type="text"
-                            class="form-control  bg-white border-green"
+                            className="form-control  bg-white border-green"
                             id="username"
                             placeholder="Ingrese el correo Electronico"
                             required
@@ -379,26 +379,26 @@ const Navbar = () => {
                         </div>
                       </div>
 
-                      <div class="col-12">
-                        <label for="email" class="form-label">
-                          Numero Telefono<span class="text-muted"></span>
+                      <div className="col-12">
+                        <label for="email" className="form-label">
+                          Numero Telefono<span className="text-muted"></span>
                         </label>
                         <input
                           type="number"
-                          class="form-control  bg-white border-green"
+                          className="form-control  bg-white border-green"
                           id="email"
                           placeholder="Ingrese Numero Telefono"
                           required
                         />
                       </div>
 
-                      <div class="col-12">
-                        <label for="address" class="form-label">
+                      <div className="col-12">
+                        <label for="address" className="form-label">
                           Direccion:
                         </label>
                         <input
                           type="text"
-                          class="form-control  bg-white border-green"
+                          className="form-control  bg-white border-green"
                           id="address"
                           placeholder="Ingrese Dirreccion"
                           required
@@ -408,16 +408,16 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   data-bs-dismiss="modal"
                 >
                   Cerrar
                 </button>
 
-                <button type="submit" class="btn btn-green border-green">
+                <button type="submit" className="btn btn-green border-green">
                   Guardar cambios
                 </button>
               </div>
