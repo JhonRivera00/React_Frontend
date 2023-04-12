@@ -16,7 +16,7 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-dark bg-color-blue p-3"
         id="menu"
       >
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <Link className="navbar-brand" to="/">
             <img src={Horizontal} alt="Logo" className="img-logo" />
             <img
@@ -91,30 +91,30 @@ const Navbar = () => {
                 </a>
 
                 <div
-                  className="dropdown-menu dropdown-menu-end"
+                  class="dropdown-menu dropdown-menu-end"
                   aria-labelledby="dropdownNotifications"
                   data-bs-toggle="modal"
                   data-bs-target="#modalAseptarRecha"
                 >
-                  <h6 className="dropdown-header ">Nuevas notificaciones</h6>
-                  <a className="dropdown-item" href="#">
-                    <div className="media">
+                  <h6 class="dropdown-header ">Nuevas notificaciones</h6>
+                  <a class="dropdown-item" href="#">
+                    <div class="media">
                       <img
                         src="https://via.placeholder.com/50x50"
                         className="mr-3 rounded-circle"
                         alt="..."
                       />
 
-                      <div className="media-body">
-                        <h6 className="mt-0 mb-1">Notificación 1</h6>
+                      <div class="media-body">
+                        <h6 class="mt-0 mb-1">Notificación 1</h6>
                         <p>Descripción de la notificación 1.</p>
-                        <small className="text-muted">Hace 5 minutos</small>
+                        <small class="text-muted">Hace 5 minutos</small>
                       </div>
                     </div>
                   </a>
 
-                  <a className="dropdown-item" href="#">
-                    <div className="media">
+                  <a class="dropdown-item" href="#">
+                    <div class="media">
                       <img
                         src="https://via.placeholder.com/50x50"
                         className="mr-3 rounded-circle"
@@ -128,8 +128,8 @@ const Navbar = () => {
                     </div>
                   </a>
 
-                  <a className="dropdown-item" href="#">
-                    <div className="media">
+                  <a class="dropdown-item" href="#">
+                    <div class="media">
                       <img
                         src="https://via.placeholder.com/50x50"
                         className="mr-3 rounded-circle"
@@ -142,8 +142,8 @@ const Navbar = () => {
                       </div>
                     </div>
                   </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item text-center" href="#">
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-center" href="#">
                     Ver todas las notificaciones
                   </a>
                 </div>
@@ -333,12 +333,12 @@ const Navbar = () => {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body text-white">
-                <div className="container">
-                  <div className="col-md-7 col-lg-8 mx-auto">
-                    <div className="row g-3">
-                      <div className="col-sm-6">
-                        <label htmlFor="firstName" className="form-label ">
+              <div class="modal-body text-white">
+                <div class="container">
+                  <div class="col-md-7 col-lg-8 mx-auto">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName"  class="form-label ">
                           Nombre
                         </label>
                         <input
@@ -350,8 +350,8 @@ const Navbar = () => {
                         />
                       </div>
 
-                      <div className="col-sm-6">
-                        <label htmlFor="lastName" className="form-label">
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">
                           Apellido
                         </label>
                         <input
@@ -363,9 +363,9 @@ const Navbar = () => {
                         />
                       </div>
 
-                      <div className="col-12">
-                        <label htmlFor="username" className="form-label">
-                          correo electronico
+                      <div class="col-12">
+                        <label for="username" class="form-label">
+                         correo electronico
                         </label>
                         <div className="input-group has-validation">
                           <span className="input-group-text border-green">@</span>
@@ -379,9 +379,9 @@ const Navbar = () => {
                         </div>
                       </div>
 
-                      <div className="col-12">
-                        <label htmlFor="email" className="form-label">
-                          Numero Telefono<span className="text-muted"></span>
+                      <div class="col-12">
+                        <label for="email" class="form-label">
+                          Numero Telefono<span class="text-muted"></span>
                         </label>
                         <input
                           type="number"
@@ -392,8 +392,8 @@ const Navbar = () => {
                         />
                       </div>
 
-                      <div className="col-12">
-                        <label htmlFor="address" className="form-label">
+                      <div class="col-12">
+                        <label for="address" class="form-label">
                           Direccion:
                         </label>
                         <input
