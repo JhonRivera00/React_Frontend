@@ -19,7 +19,7 @@ const ContenidoInicio = () => {
             blandas, al deporte, la actividad física, el aprovechamiento del
             tiempo libre y el arte.
             <Link
-              to="/"
+              to="/conocenos" 
               className="btn btn-green btn-md w-50 mt-5 "
             >
               Conoce mas...

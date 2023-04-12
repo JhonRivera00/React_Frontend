@@ -23,8 +23,8 @@ const Contactanos = () => {
       </div>
       {/* <!-- Fin Titulo --> */}
 
-      {/* <!--CONTACT STAR--> */}
 
+      {/* <!--CONTACT STAR--> */}
       <main className="my-5">
         <div className="d-flex flex-wrap justify-content-around">
           <div className="bg-green p-5 mt-5 rounded-4 text-center w-25 shadow-black align-items-stretch contenedor-icons-contact">
@@ -58,7 +58,6 @@ const Contactanos = () => {
                   type="text"
                   className="form-control border-green"
                   id="firstName"
-                  value=""
                   placeholder="Nombre completo*"
                   required
                 />
@@ -130,9 +129,9 @@ const Contactanos = () => {
             <div className="modal">
     
             </div>
-            <div className="modal-body mx-auto h4">¡Tu cita se ha agendado exitosamente¡</div>
+            <div className="modal-body mx-auto h4">¡Reporte enviado exitosamente¡</div>
             <img src={Check} className="mx-auto w-25" alt="" />
-            <div className="modal-body text-center">Pronto recibiras un mensaje confirmandote la programacion de tu cita</div>
+            <div className="modal-body text-center">Pronto recibiras una respuesta</div>
             <div className="modal-footer">
               
               <button type="button" className="btn btn-green mx-auto" data-bs-dismiss="modal">

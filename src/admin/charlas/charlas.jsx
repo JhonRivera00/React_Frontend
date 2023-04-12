@@ -1,6 +1,7 @@
 import Imgnav from "../../assets/img/imgnav.jpg";
-import users from "../../assets/img/users.png";
+// import users from "../../assets/img/users.png";
 import users1 from "../../assets/img/user1.png";
+import search from '../../assets/img/icons/search.svg';
 
 const Charlas = () => {
   return (
@@ -19,8 +20,34 @@ const Charlas = () => {
       </div>
       {/* Fin Titulo */}
 
+
+
+      {/* Buscador */}
+
+      <div className="row">
+
+        <div className="input-group w-75 mt-4">
+          <input type="search" className="form-control rounded" placeholder="Buscar..." aria-label="Search" aria-describedby="search-addon" />
+          <img src={search} className="btn btn-outline-primary" alt="" />
+        </div>
+        {/* Fin buscador */}
+
+        {/* Seleccionar filtro */}
+        <div className="mt-0 w-25 mt-4 ">
+          {/* <label htmlFor="exampleFormControlSelect1" className="form-label">FILTRO</label> */}
+          <select className="form-control" id="exampleFormControlSelect1" defaultValue="1">
+            <option value="1" disabled>FILTRO...</option>
+            <option value="2">Destacados</option>
+            <option value="3">Noticias</option>
+          </select>
+        </div>
+
+      </div>
+
+      {/* Fin selecionar filtro */}
+
       {/* Inicio Contenido*/}
-      <main className=" py-5">
+      <main className="mt-3">
         <div className="table-responsive">
           <table className="table table-hover table-sm border-green">
             <thead className="border-1">
@@ -38,11 +65,11 @@ const Charlas = () => {
                 <td data-label="ficha">2452439</td>
                 <td data-label="motivo">Problema familiar</td>
                 <td className=" link-light ">
-              <div >
-              <p className="bg-warning rounded-pill text-center w-75">En espera</p>
-              </div>
-              </td>               
-               <td data-label="descripcion">
+                  <div >
+                    <p className="bg-warning rounded-pill text-center w-75">En espera</p>
+                  </div>
+                </td>
+                <td data-label="descripcion">
                   <a className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ cursor: "pointer" }}> Ver mas...</a>
                 </td>
               </tr>
@@ -105,10 +132,15 @@ const Charlas = () => {
               </div>
 
 
+
+
             </tbody>
           </table>
         </div>
       </main>
+
+
+
 
       {/* Modal CREAR EVENTO */}
       <div className="modal fade" id="modalAplazar" tabIndex="-1" aria-labelledby="exampleModalINLabel" aria-hidden="true">
@@ -117,16 +149,16 @@ const Charlas = () => {
             <div className="modal-header">
               <h3 className="modal-title w-100 text-center " id="exampleModalINLabel">Aplazamiento</h3>
             </div><br></br>
-                 
+
             <div className="modal-body">
               <form className="row g-2 needs-validation" action="/">
-               
+
                 {/* Fecha y hora de inicio */}
                 <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}>
                   <label htmlFor="validationCustom02" className="form-label">FECHA Y HORA APLAZAMIENTO</label>
                   <input type="datetime-local" className="form-control" id="validationCustom02" required />
                 </div>
-               
+
                 {/* Seleccionar instructor */}
                 <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
                   <label htmlFor="exampleFormControlSelect1" className="form-label">SELECCIONAR PROFECIONAL</label>
@@ -140,7 +172,7 @@ const Charlas = () => {
                   </select>
                 </div>
 
-                 {/* Motivo aplazamiento */}
+                {/* Motivo aplazamiento */}
                 <div className="col-12 mt-0" style={{ padding: "0 50px 0 50px" }}><br></br>
                   <label htmlFor="validationCustom01" className="form-label">MOTIVO APLAZAMIENTO</label>
                   <textarea type="text" className="form-control" id="validationCustom01" required />

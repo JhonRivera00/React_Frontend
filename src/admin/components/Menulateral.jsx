@@ -29,7 +29,7 @@ function Menulateral() {
       </div>
       
     </div>
-    <ul className="navbar-nav flex-column mb-sm-auto mt-4 align-items-center align-items-sm-start w-100" id="menu">
+    <ul className="navbar-nav flex-column mb-sm-auto mt-4 CCCCalign-items-sm-start w-100" id="menu">
       <li className="nav-item w-100 rounded-4 shadow-lg">
         <Link to="/admin" className="nav-link pt-3 ps-2">
           <img src={house1} alt="" className="bg-green-opacity p-2 rounded-2" />

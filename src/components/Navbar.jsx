@@ -439,11 +439,12 @@ const Navbar = () => {
         <div className="modal-dialog ">
           <div className="modal-content bg-color-blue  text-white">
             <div className="modal-header">
-              <h5 className="modal-title mx-auto" id="exampleModalLabel">
+              <h5 className="modal-title text-center w-100" id="exampleModalLabel">
                 Solicitud Charla
               </h5>
-              <img alt="icon-cerrarsesion" className="me-3" src={gear} />
+              <button type="button" className="btn-close bg-white " data-bs-dismiss="modal" aria-label="Close" ></button>
             </div>
+
             <div className="modal-body text-center ">
               Hola Fernando, Tu solicitud quedo asignada para el lunes 30 de
               Abril del 2023 a las 16:00:00 horas del dia, Pedimos su
@@ -464,7 +465,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Fin notificacion de aseptar y rechazar */}
 
 
